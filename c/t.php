@@ -5,7 +5,7 @@ error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
 session_start();
 if ($_SESSION['log'] !== 'yes') {
     $result['result'] = 'notok';
-    $result['msg'] = '请登录.';
+    $result['msg'] = '请登录';
     echo json_encode($result, true);
     session_write_close();
     exit();
@@ -121,12 +121,12 @@ if ($type == 'submit') {
             $result['pid'] = $edits;
         } else {
             $result['result'] = 'notok';
-            $result['msg'] = '除了标签，其他内容不得为空.';
+            $result['msg'] = '除了标签，其他内容不得为空';
         }
     }
 } else {
     $result['result'] = 'notok';
-    $result['msg'] = '请求错误.';
+    $result['msg'] = '请求错误';
 }
 echo json_encode($result, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 ?>
