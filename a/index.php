@@ -31,11 +31,12 @@ if($request=='log'){
 			$_SESSION['log']='yes';
 			header('Location: edit.php');
 		}else{
-			echo "<script>alert('验证错误QAQ');</script>";
+			echo "<script>alert('验证错误');</script>";
 		}
 	}
 }
 }else{
+
 	header('Location: edit.php');
 }
 session_write_close();
@@ -74,11 +75,11 @@ input:focus {
 <body>
 <center>
 <?php if(!file_exists('./passport.php')){?>
-<h2>检测到你是第一次进入验证页面</h2>
-<p>请输入[用户名:密码]格式来创建一个验证文件~</p>
-<p style='font-size:20px;color:#AAA;'>示例：SomeBottle:123456</p>
+<h2>XBlog检测到你是第一次进入验证页面</h2>
+<p>请输入 用户名:密码 格式来创建一个验证文件~</p>
+<p style='font-size:20px;color:#AAA;'>示例（不要填这个）：admin:123456</p>
 <?php }else{ ?>
-<h2>请输入[用户名:密码]格式以继续</h2>
+<h2>请再次输入 用户名:密码  格式以继续</h2>
 <?php } ?>
 <p>&nbsp;</p>
 <form action='?log' method='post'>
