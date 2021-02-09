@@ -134,7 +134,7 @@ a{color:grey;}
 <script>var editnum<?php if(is_numeric($edit)){echo '='.$edit;}?>;</script>
 <body>
 <div class='container'>
-<h2 id='zt'>EDIT -v-</h2>
+<h2 id='zt'>编辑 - EDIT</h2>
 <?php if(is_numeric($edit)){?><p><a href='edit.php' target='_self' style='color:#AAA;'>新文章/页面</a>&nbsp;<a href='edit.php?e=<?php echo $edit;?>&t=del' target='_self' style='color:#AAA;'>删除ta</a></p><?php }; ?>
 <p><input type='text' placeholder='标题(Title)' class='tagi input' name='t' id='t' value='<?php echo $ptitle;?>'></input></p>
 <p><textarea rows='20' class='area' placeholder='内容Content' name='c' id='c' class='input'><?php echo $pcontent;?></textarea></p>
