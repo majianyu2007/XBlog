@@ -3,8 +3,6 @@
 * Markdown解析器源于Parsedown:  
 😂 <http://parsedown.org>  
 
-![](https://ww2.sinaimg.cn/large/ed039e1fgy1ft3gual1czj20qc0englt)   
-
 --------------------------------
 <h3 style='color:0099FF;'>麻雀虽小，五脏俱全</h3> 
 
