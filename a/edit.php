@@ -128,21 +128,20 @@ body {
 a{color:grey;}
 </style>
       <script src="./../c/q.js"></script>
-	  <title>文章&页面</title>
+	  <title>文章 & 页面</title>
 	</head>
 </html>
 <script>var editnum<?php if(is_numeric($edit)){echo '='.$edit;}?>;</script>
 <body>
 <div class='container'>
 <h2 id='zt'>EDIT -v-</h2>
-<?php if(is_numeric($edit)){?><p><a href='edit.php' target='_self' style='color:#AAA;'>新撰写文章/页面</a>&nbsp;<a href='edit.php?e=<?php echo $edit;?>&t=del' target='_self' style='color:#AAA;'>删除这个</a></p><?php }; ?>
-<p><input type='text' placeholder='标题Title' class='tagi input' name='t' id='t' value='<?php echo $ptitle;?>'></input></p>
+<?php if(is_numeric($edit)){?><p><a href='edit.php' target='_self' style='color:#AAA;'>新文章/页面</a>&nbsp;<a href='edit.php?e=<?php echo $edit;?>&t=del' target='_self' style='color:#AAA;'>删除ta</a></p><?php }; ?>
+<p><input type='text' placeholder='标题(Title)' class='tagi input' name='t' id='t' value='<?php echo $ptitle;?>'></input></p>
 <p><textarea rows='20' class='area' placeholder='内容Content' name='c' id='c' class='input'><?php echo $pcontent;?></textarea></p>
-<p><input type='text' placeholder='日期Date/页面链接link' class='tagi input' value='<?php if(!empty($pdat)){echo $pdat;}else{echo $daten;};?>' name='d' id='d'></input></p>
+<p><input type='text' placeholder='日期(Date)/页面链接(link)' class='tagi input' value='<?php if(!empty($pdat)){echo $pdat;}else{echo $daten;};?>' name='d' id='d'></input></p>
 <p><input type='text' placeholder='标签Tag' class='tagi input' name='a' id='a' value='<?php echo $tag;?>'></input></p>
-<p class='s'><a href="javascript:void(0);" onclick='edit()' class="button button-primary button-rounded" id='btn'>(O_o)?</a><input type="checkbox" id='zd' <?php if(checkc()){echo 'checked="true"';}?>/>置顶&nbsp;&nbsp;&nbsp;<a href='javascript:void(0);' onclick='faq()'>FAQ</a></p>
-<form action="https://sm.ms/api/upload" id="fileinfo" method="post"
-enctype="multipart/form-data" style='display:none;'>
+<p class='s'><a href="javascript:void(0);" onclick='edit()' class="button button-primary button-rounded" id='btn'>(O_o)?</a><input type="checkbox" id='zd' <?php if(checkc()){echo 'checked="true"';}?>/>置顶&nbsp;&nbsp;&nbsp;<a href='javascript:void(0);' onclick='faq()'>需要帮助?</a></p>
+<form action="https://sm.ms/api/upload" id="fileinfo" method="post" enctype="multipart/form-data" style='display:none;'>
 <input type="file" name="smfile" id="smfile" /> 
 <input type="hidden" name="ssl" value="true"></input>
 <input type="hidden" name="format" value="json"></input>
