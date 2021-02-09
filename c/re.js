@@ -203,7 +203,7 @@ function g(page, e) {
 				if (!usecache) {
 					$.op(1, e);
 					document.getElementById('l').style.display = 'none';
-					$.ht('<center><h2 style=\'color:#AAA;\'>失去连接~OAO</h2></center>', e);
+					$.ht('<center><h2 style=\'color:#AAA;\'>失去连接~</h2></center>', e);
 				}
 				state = true;
 			}
@@ -278,5 +278,5 @@ function getmore() { /*加载更多-函数*/
 	}
 }
 setTimeout(function() {
-	console.log('\n %c =3= OBottle  %c @SomeBottle 2019.1.20 \n\n', 'color:#484848;background:#ffffff;padding:5px 0;', 'color:#ffffff;background:#484848;padding:5px 0;');
+	console.log('\n %c =3= OBottle  %c @Xiaozhu 2021.2.10 \n\n', 'color:#484848;background:#ffffff;padding:5px 0;', 'color:#ffffff;background:#484848;padding:5px 0;');
 }, 1000);
