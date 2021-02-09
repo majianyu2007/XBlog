@@ -66,13 +66,13 @@ if($act=='out'){
 		file_put_contents('./../p/index.php','<?php $inn='.$inn.';$in='.var_export($in,true).';$tp=\''.$tp.'\';$tagi='.var_export($tagi,true).';?>');
 		echo "<script>window.open('edit.php','_self');</script>";
 	}else{
-		echo "<script>alert('该文章被吃了O_o');window.open('edit.php','_self');</script>";
+		echo "<script>alert('Oh no \n该文章被吃了');window.open('edit.php','_self');</script>";
 	}
 	}else{
 		echo "<script>alert('你还没有任何文章');window.open('edit.php','_self');</script>";
 	}
 	}else{
-		echo "<script>if(confirm('真的要删除这篇文章吗？！')){window.open('?e=".$edit."&t=del&c=yes','_self');}else{window.open('edit.php?e=".$edit."','_self');};</script>";
+		echo "<script>if(confirm('真的要删除这篇文章吗？！\n 该操作无法撤回！')){window.open('?e=".$edit."&t=del&c=yes','_self');}else{window.open('edit.php?e=".$edit."','_self');};</script>";
 	}
 	exit();
 }
