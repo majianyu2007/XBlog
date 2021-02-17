@@ -1,4 +1,4 @@
-/*Scripts For Request - SomeBottle*/
+/*Scripts For Request - XBlog*/
 var $ = new Object();
 $.ls = new Array();
 $.lss = '';
@@ -10,7 +10,7 @@ var SC = function(e) {
 			return document.getElementById(e);
 		}
 	}
-$.chash = function(h) { /*校验hash*/
+$.chash = function(h) { /*校验Hash*/
 	if ($.tr(window.location.href) == h) {
 		return true;
 	} else {
