@@ -278,5 +278,5 @@ function getmore() { /*加载更多-函数*/
 	}
 }
 setTimeout(function() {
-	console.log('\n %c =3= OBottle  %c @Xiaozhu 2021.2.10 \n\n', 'color:#484848;background:#ffffff;padding:5px 0;', 'color:#ffffff;background:#484848;padding:5px 0;');
+	console.log('\n %c =3= OBottle  %c @MaJianyu 2021.2.18 \n\n', 'color:#484848;background:#ffffff;padding:5px 0;', 'color:#ffffff;background:#484848;padding:5px 0;');
 }, 1000);
