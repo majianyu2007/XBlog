@@ -1,6 +1,6 @@
 /*Comment.B Beta1.6*/
 var CB = {
-    mainpath: 'https://xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.ml/',
+    mainpath: 'https://xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.ml/comment/',
     gravatar: 'https://cn.gravatar.com/avatar/',
     ini: function() { /*initialization，必要函数初始化*/
         String.prototype.rpl = function(origin, to) { /*在String类型原型链上加一个简化replace的函数方法*/
