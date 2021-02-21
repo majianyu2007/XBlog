@@ -1,7 +1,7 @@
 /*Comment.B Beta1.6*/
 var CB = {
     mainpath: 'https://xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.ml/comment/',
-    gravatar: 'https://cn.gravatar.com/avatar/',
+    gravatar: 'https://cdn.v2ex.com/gravatar/',
     ini: function() { /*initialization，必要函数初始化*/
         String.prototype.rpl = function(origin, to) { /*在String类型原型链上加一个简化replace的函数方法*/
             /*ExpReg需要转义一道，正则匹配还需要转义一道，就形成了反斜杠超级加倍*/
